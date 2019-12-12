@@ -12,8 +12,8 @@ const Routes = () => (
       <Route exact path="/" component={Home}></Route>
       <Route path="/thread/:thread_slug" component={Thread}></Route>
       <Route exact path="/sobre" component={About}></Route>
-      <Route exact path="/P404" component={P404}></Route>
-      <Route path="*" render={() => <Redirect to="/P404" />}></Route>
+      <Route exact path="/404" component={P404}></Route>
+      <Route path="*" render={() => <Redirect to="/404" />}></Route>
     </Switch>
   </>
 );
